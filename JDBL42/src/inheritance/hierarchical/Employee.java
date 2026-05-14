@@ -1,4 +1,4 @@
-package com.oops.inheritance.multilevel;
+package inheritance.hierarchical;
 
 public class Employee extends Person{
 	

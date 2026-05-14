@@ -6,7 +6,7 @@ public class TraineeEmployee extends Employee{
 	
 	public void display() {
 		super.display();
-		System.out.println("Trainee display called:"+toString());
+		System.out.println("Trainee display called:"+this.toString());
 	}
 
 	@Override
@@ -18,3 +18,4 @@ public class TraineeEmployee extends Employee{
 	
 
 }
+
