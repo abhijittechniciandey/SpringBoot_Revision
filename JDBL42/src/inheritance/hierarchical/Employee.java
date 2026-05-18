@@ -2,6 +2,11 @@ package inheritance.hierarchical;
 
 public class Employee extends Person{
 	
+	public Employee() {
+		
+		System.out.println("Employee Constructor called!");
+	}
+
 	int salary;
 	String designation;
 	

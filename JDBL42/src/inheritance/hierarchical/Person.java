@@ -6,7 +6,11 @@ public class Person {
 	String name;
 	
 	public void display() {
-		System.out.println(this.toString());
+		System.out.println(toString());
+	}
+
+	public Person() {
+		System.out.println("Person Constructor called");
 	}
 
 	@Override

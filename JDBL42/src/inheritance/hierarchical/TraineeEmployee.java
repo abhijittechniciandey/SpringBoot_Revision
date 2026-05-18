@@ -5,8 +5,8 @@ public class TraineeEmployee extends Person{
 	int tenure;
 	
 	public void display() {
-		super.display();
-		System.out.println("Trainee display called:"+this.toString());
+		//super.display();
+		System.out.println("Trainee display called:"+toString());
 	}
 
 	@Override
