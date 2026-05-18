@@ -13,15 +13,26 @@ public class MulitLevelInheritanceMain {
 		
 		System.out.println("*************Test************");
 		
-		Person p = new Person();
-		
-		System.out.println("*************************");
-		
-		Person p1 = new Employee();
-		
-		System.out.println("*************************");
-		
+//		Person p = new Person();
+//		
+//		System.out.println("*************************");
+//		
+//		Person p1 = new Employee();
+//		
+//		System.out.println("*************************");
+//		
 		Employee e = new Employee();
+		e.salary=0;
+		try {
+			
+			System.out.println("The Per day cost:"+30/e.salary);
+			
+		}
+		
+		catch(Exception exp) {
+			exp.printStackTrace();
+		}
+		
 		
 		System.out.println("*************************");
 		
