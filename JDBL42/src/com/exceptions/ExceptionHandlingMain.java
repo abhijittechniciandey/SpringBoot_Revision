@@ -21,12 +21,23 @@ public class ExceptionHandlingMain {
 //		
 //		System.out.println("Outside of try Block");
 
-		Employee e = new Employee();
+//		Employee e = new Employee();
+//		try {
+//			e.loadEmployeeFromFile(new File("abc.txt"));
+//		} catch (FileNotFoundException e1) {
+//			// TODO Auto-generated catch block
+//			e1.printStackTrace();
+//		}
+		
 		try {
-			e.loadEmployeeFromFile(new File("abc.txt"));
-		} catch (FileNotFoundException e1) {
+			System.out.println("In try");
+			throw new Exception("Test Exception");
+		} catch (Exception e) {
 			// TODO Auto-generated catch block
-			e1.printStackTrace();
+			e.printStackTrace();
+		}
+		finally {
+			System.out.println("FInally Block");
 		}
 	}
 
