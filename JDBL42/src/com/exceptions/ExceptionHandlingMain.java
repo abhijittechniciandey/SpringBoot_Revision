@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class ExceptionHandlingMain {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InvalidAgeException {
 		
 //		File f = new File("abc.txt");
 //		f.exists();
@@ -29,15 +29,25 @@ public class ExceptionHandlingMain {
 //			e1.printStackTrace();
 //		}
 		
-		try {
-			System.out.println("In try");
-			throw new Exception("Test Exception");
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+//		try {
+//			System.out.println("In try");
+//			throw new Exception("Test Exception");
+//		} catch (Exception e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+//		finally {
+//			System.out.println("FInally Block");
+//		}
+		
+		Employee employee = new Employee();
+		int age=17;
+		if(age<18) {
+			throw new InvalidAgeException("Age cant be less than 18"+age);
 		}
-		finally {
-			System.out.println("FInally Block");
+		else {
+			employee.age=age;
+			System.out.println(employee);
 		}
 	}
 
